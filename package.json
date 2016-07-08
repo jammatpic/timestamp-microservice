@@ -2,7 +2,7 @@
   "name": "timestamp-microservice",
   "version": "1.0.0",
   "description": "A microservice that is passed strings, and, if the string contains either a unix timestamp or natural language date, returns the date in both formats.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
