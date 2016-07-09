@@ -1,0 +1,24 @@
+<head>
+    <title>Timestamp Microservice</title>
+    <meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class = "container lead">
+        <header class = "page-header">
+            <h1>Timestamp Microservice</h1>
+        </header>
+        <div class = "lead">
+            <h3>Usage:</h3>
+            <p>Pass a Unix timestamp or natural language date as a parameter, and this service will return the date in both these forms.</p>
+        </div>
+        <div>
+            <h3>Example:</h3>
+            <p><code>https://tstamp-ms.herokuapp.com/December%2015,%202015</code></p>
+            <p><code>https://tstamp-ms.herokuapp.com/1450137600</code></p>
+            <p>Will give an output of:</p>
+            <p><code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code></p>
+        </div>
+    </div>
+</body>
