@@ -1,12 +1,12 @@
 "use strict";
-var moment = require("moment");
+var moment = require("moment"); // lib for parsing, manulating, & dislaying dates
 
 function dateHandler() {
+    // making moment object that can be formatted easily, then returning it in different formats
     this.getDates = function(req, res) {
-        // making moment object that can be formatted easily
         var theDate = moment(req.params.date, ["X", "MMMM DD, YYYY"]);
         var dateJSON = {"unix": theDate.unix(), "natural": theDate.format("MMMM DD, YYYY")};
-        res.end(JSON.stringify(dateJSON));
+        res.json(dateJSON);
     };
 };
 
